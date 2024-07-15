@@ -1,0 +1,16 @@
+.button{
+  max-height: 40px;
+  padding: 5px;
+  min-width: 100px;
+  border-radius: var(--border-radius-small);
+  outline: none;
+  background: none;
+  border: 2px solid var(--color-light);
+  color: var(--color-light);
+
+  &:hover{
+    color: var(--color-succsess);
+    border-color: var(--color-succsess);
+  }
+
+}

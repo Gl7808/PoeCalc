@@ -65,10 +65,12 @@ h3 {
   --color-light-gray: rgba(255, 255, 255, 0.6);
   --color-light-gray-2: rgba(255, 255, 255, 0.4);
   --color-dark: #05010D;
+  --color-dark-gray: #10081e;
   --color-block: #120E19;
   --color-succsess: #59D499;
   --color-accent-blue: #56C2FF;
   --color-accent-red: #FF6363;
+  --color-accent-orange: #ff8d63;
   --color-accent-purple: #A485FF;
   --color-accent-glow: #FFE2E2;
   --font-family-base: "Inter", sans-serif;
@@ -240,17 +242,13 @@ svg * {
   }
 }
 .header {
-  padding-top: 20px;
   background-color: var(--color-block);
-  height: 100vh;
-  width: 15vw;
-  min-width: 200px;
+  font-weight: 700;
 }
 .header__inner {
-  height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  height: 80px;
   align-items: center;
 }
 .header__logo {
@@ -262,7 +260,6 @@ svg * {
 }
 .header__menu-list {
   display: flex;
-  flex-direction: column;
   column-gap: 40px;
 }
 .header__menu-link {
@@ -271,6 +268,81 @@ svg * {
   height: 42px;
   text-transform: uppercase;
   font-size: 14px;
+}
+
+.section {
+  margin-top: 100px;
+}
+.section__header {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+.section__body {
+  margin-top: 50px;
+}
+.section__description {
+  color: var(--color-light-gray-2);
+}
+
+.violet-bg {
+  background-color: var(--color-accent-purple);
+  padding: 5px;
+  border-radius: var(--border-radius-medium);
+}
+
+.expedition__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 50px;
+  column-gap: 50px;
+}
+.expedition__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 40px;
+  background-color: var(--color-dark-gray);
+  border-radius: var(--border-radius-medium);
+  padding: 30px 30px 30px 30px;
+}
+.expedition__title {
+  padding: 5px;
+  border-radius: var(--border-radius-small);
+  font-size: 20px;
+  background-color: var(--color-accent-blue);
+}
+.expedition__description {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+.expedition__description p {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+}
+
+.button {
+  max-height: 40px;
+  padding: 5px;
+  min-width: 100px;
+  border-radius: var(--border-radius-small);
+  outline: none;
+  background: none;
+  border: 2px solid var(--color-light);
+  color: var(--color-light);
+}
+.button:hover {
+  color: var(--color-succsess);
+  border-color: var(--color-succsess);
+}
+
+.content__lvl-green {
+  background-color: var(--color-accent-red);
+}
+.content__lvl-orange {
+  background-color: var(--color-accent-orange);
 }
 
 /*# sourceMappingURL=style.css.map */
