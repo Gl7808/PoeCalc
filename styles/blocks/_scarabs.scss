@@ -23,11 +23,12 @@
 
   }
   &__description{
-    min-width: 400px;
+    z-index: 1;
+    min-width: 390px;
     display: none;
     position: absolute;
     top: -100px;
-    left: 60px;
+    left: 0;
     background-color: var(--color-dark);
     padding: 10px;
     border-radius: var(--border-radius-medium);
@@ -37,5 +38,6 @@
 
   &__title{
     font-size: 18px;
+    color: var(--color-accent-orange);
   }
 }
