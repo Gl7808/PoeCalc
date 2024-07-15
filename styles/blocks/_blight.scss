@@ -1,4 +1,4 @@
-.expedition{
+.blight{
 
   &__note{
     background-color: var(--color-dark-gray);
@@ -6,44 +6,46 @@
     padding: 15px;
     border-radius: var(--border-radius-medium);
     font-size: 16px;
+    margin-top: 10px;
   }
 
   &__list{
     margin-top: 50px;
     display: grid;
+    gap: 40px;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 50px;
-    column-gap: 50px;
+  }
+
+  &__list-oil{
+    margin-top: 50px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   &__item{
+    padding: 20px;
+    background-color: var(--color-dark-gray);
     display: flex;
     align-items: center;
-    justify-content: space-between;
     column-gap: 40px;
-    background-color: var(--color-dark-gray);
     border-radius: var(--border-radius-medium);
-    padding: 30px 30px 30px 30px;
+    justify-content: space-between;
   }
 
   &__title{
-    padding: 5px;
-    border-radius: var(--border-radius-small);
-    font-size: 20px;
-    background-color: var(--color-accent-blue);
-  }
-
-  &__description{
     display: flex;
-    flex-direction: column;
-    font-size: 20px;
-
-
-    p{
-      display: flex;
-      column-gap: 5px;
-      align-items: center;
-    }
+    align-items: center;
+    column-gap: 5px;
+    position: relative;
+  }
+  &__ilvl{
+    background-color: var(--color-accent-blue);
+    padding: 5px 10px;
+    border-radius: var(--border-radius-small);
   }
 
+  &__oils{
+    display: flex;
+  }
 }

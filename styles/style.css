@@ -291,7 +291,15 @@ svg * {
   border-radius: var(--border-radius-medium);
 }
 
+.expedition__note {
+  background-color: var(--color-dark-gray);
+  color: var(--color-light-gray);
+  padding: 15px;
+  border-radius: var(--border-radius-medium);
+  font-size: 16px;
+}
 .expedition__list {
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 50px;
@@ -338,11 +346,60 @@ svg * {
   border-color: var(--color-succsess);
 }
 
-.content__lvl-green {
+.content__lvl-red {
   background-color: var(--color-accent-red);
 }
 .content__lvl-orange {
-  background-color: var(--color-accent-orange);
+  background-color: var(--color-accent-orange) !important;
+}
+
+.blight__note {
+  background-color: var(--color-dark-gray);
+  color: var(--color-light-gray);
+  padding: 15px;
+  border-radius: var(--border-radius-medium);
+  font-size: 16px;
+  margin-top: 10px;
+}
+.blight__list {
+  margin-top: 50px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.blight__list-oil {
+  margin-top: 50px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(1, 1fr);
+}
+.blight__item {
+  padding: 20px;
+  background-color: var(--color-dark-gray);
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  border-radius: var(--border-radius-medium);
+  justify-content: space-between;
+}
+.blight__title {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  position: relative;
+}
+.blight__ilvl {
+  background-color: var(--color-accent-blue);
+  padding: 5px 10px;
+  border-radius: var(--border-radius-small);
+}
+.blight__oils {
+  display: flex;
+}
+
+.notification {
+  color: var(--color-accent-orange);
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

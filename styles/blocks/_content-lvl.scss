@@ -1,10 +1,10 @@
 .content__lvl{
 
-  &-green{
+  &-red{
     background-color: var(--color-accent-red);
   }
 
   &-orange{
-    background-color: var(--color-accent-orange);
+    background-color: var(--color-accent-orange) !important;
   }
 }
