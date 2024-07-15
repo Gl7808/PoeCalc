@@ -1,0 +1,19 @@
+.atlas{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+
+  &__title{
+    padding: 5px;
+    background-color: var(--color-accent-purple);
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+  }
+
+  &__link{
+    background-color: var(--color-dark-alternate);
+    border-radius: 0 0 5px 5px;
+    padding: 5px;
+    text-align: center;
+  }
+}

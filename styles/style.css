@@ -73,6 +73,7 @@ h3 {
   --color-accent-orange: #ff8d63;
   --color-accent-purple: #A485FF;
   --color-accent-glow: #FFE2E2;
+  --color-dark-alternate: #170e2f;
   --font-family-base: "Inter", sans-serif;
   --container-width: 1280px;
   --container-padding-x: 32px;
@@ -284,6 +285,9 @@ svg * {
 .section__description {
   color: var(--color-light-gray-2);
 }
+.section:last-child {
+  padding-bottom: 100px;
+}
 
 .violet-bg {
   background-color: var(--color-accent-purple);
@@ -297,6 +301,7 @@ svg * {
   padding: 15px;
   border-radius: var(--border-radius-medium);
   font-size: 16px;
+  margin-top: 30px;
 }
 .expedition__list {
   margin-top: 50px;
@@ -304,6 +309,11 @@ svg * {
   grid-template-columns: repeat(2, 1fr);
   row-gap: 50px;
   column-gap: 50px;
+}
+.expedition__list-boss {
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-between;
 }
 .expedition__item {
   display: flex;
@@ -313,6 +323,11 @@ svg * {
   background-color: var(--color-dark-gray);
   border-radius: var(--border-radius-medium);
   padding: 30px 30px 30px 30px;
+}
+.expedition__item-boss {
+  border: 1px solid var(--color-light-gray);
+  padding: 10px;
+  border-radius: var(--border-radius-small);
 }
 .expedition__title {
   padding: 5px;
@@ -400,6 +415,57 @@ svg * {
 .notification {
   color: var(--color-accent-orange);
   font-weight: 700;
+}
+
+.atlas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.atlas__title {
+  padding: 5px;
+  background-color: var(--color-accent-purple);
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+}
+.atlas__link {
+  background-color: var(--color-dark-alternate);
+  border-radius: 0 0 5px 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.scarabs {
+  background-color: var(--color-dark-gray);
+  padding: 20px;
+}
+.scarabs__list {
+  display: flex;
+  justify-content: space-between;
+}
+.scarabs__item {
+  position: relative;
+  background-color: var(--color-dark);
+  border-radius: var(--border-radius-medium);
+  padding: 5px;
+}
+.scarabs__item:hover .scarabs__description {
+  display: block;
+}
+.scarabs__description {
+  min-width: 400px;
+  display: none;
+  position: absolute;
+  top: -100px;
+  left: 60px;
+  background-color: var(--color-dark);
+  padding: 10px;
+  border-radius: var(--border-radius-medium);
+  border: 1px solid var(--color-accent-purple);
+  font-size: 14px;
+}
+.scarabs__title {
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
