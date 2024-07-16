@@ -1,0 +1,60 @@
+.gemslot{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  position: relative;
+  max-width: 100px;
+  align-self: center;
+  gap: 5px;
+  margin-top: 10px;
+
+  &__text{
+    display: none;
+    position: absolute;
+    left: -100px;
+    top: -150px;
+    border: 1px solid var(--color-accent-blue);
+    padding: 5px;
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-dark-gray);
+  }
+
+  &__socket{
+    position: relative;
+    width: 15px;
+    height: 15px;
+
+    &:hover{
+      .gemslot__text{
+        display: block;
+      }
+    }
+
+    &:after{
+      content: '';
+      left: 0;
+      top: 0;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border: 3px solid white;
+      z-index: 5;
+      border-radius: 50%;
+    }
+
+    &-r{
+      &:after{
+        border-color: var(--color-accent-red);
+      }
+    }
+    &-g{
+      &:after{
+        border-color: var(--color-succsess);
+      }
+    }
+    &-b{
+      &:after{
+        border-color: var(--color-accent-blue);
+      }
+    }
+  }
+}

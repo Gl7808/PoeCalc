@@ -44,6 +44,15 @@
     z-index: 2;
   }
 
+  &__separator{
+    width: 100%;
+    height: 6vh;
+    background-color: var(--color-dark-gray);
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
 
+  }
 
 }
