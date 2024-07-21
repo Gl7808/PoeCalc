@@ -65,6 +65,7 @@ h3 {
   --color-light-gray: rgba(255, 255, 255, 0.6);
   --color-light-gray-2: rgba(255, 255, 255, 0.4);
   --color-dark: #05010D;
+  --color-dark-2: rgba(28, 28, 28, 0.5);
   --color-dark-gray: #10081e;
   --color-block: #120E19;
   --color-succsess: #59D499;
@@ -518,11 +519,13 @@ svg * {
 .equip__separator {
   width: 100%;
   height: 6vh;
-  background-color: var(--color-dark-gray);
+  background-color: var(--color-dark-alternate);
   margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   padding-left: 10px;
+  border-radius: var(--border-radius-medium);
 }
 
 .gemslot {
@@ -571,6 +574,107 @@ svg * {
 }
 .gemslot__socket-b:after {
   border-color: var(--color-accent-blue);
+}
+
+.note {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: var(--color-dark-gray);
+  border-radius: var(--border-radius-medium);
+}
+
+.npc-name {
+  color: var(--color-accent-orange);
+  font-weight: bold;
+}
+
+.gem-name {
+  font-weight: bold;
+}
+.gem-name--red {
+  color: var(--color-accent-red);
+}
+.gem-name--blue {
+  color: var(--color-accent-blue);
+}
+.gem-name--green {
+  color: var(--color-succsess);
+}
+
+.gem-nest {
+  display: inline-flex;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light);
+  position: relative;
+}
+.gem-nest:not(:first-child) {
+  margin-left: 5px;
+}
+.gem-nest:not(:first-child):before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  translate: -50%;
+  width: 7px;
+  height: 1px;
+  border: 1px dotted var(--color-light);
+}
+.gem-nest--red {
+  border: 2px solid var(--color-accent-red);
+}
+.gem-nest--blue {
+  border: 2px solid var(--color-accent-blue);
+}
+.gem-nest--green {
+  border: 2px solid var(--color-succsess);
+}
+
+.roadmap__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.roadmap__list:before {
+  content: "";
+  height: 100%;
+  width: 2px;
+  background-color: var(--color-accent-purple);
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+}
+.roadmap__item {
+  margin-top: 100px;
+  width: 45%;
+  padding: 10px;
+  border: 1px solid var(--color-accent-orange);
+  background-color: var(--color-dark-2);
+  color: var(--color-light-gray);
+}
+.roadmap__item:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light);
+  background-color: var(--color-accent-purple);
+  left: 50%;
+  translate: -50%;
+}
+.roadmap__item:nth-child(even) {
+  align-self: flex-end;
+}
+.roadmap__title {
+  color: var(--color-accent-orange);
+}
+.roadmap__linked {
+  padding-left: 10px;
+  border-left: 1px dotted var(--color-light);
 }
 
 /*# sourceMappingURL=style.css.map */

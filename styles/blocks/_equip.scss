@@ -47,11 +47,13 @@
   &__separator{
     width: 100%;
     height: 6vh;
-    background-color: var(--color-dark-gray);
+    background-color: var(--color-dark-alternate);
     margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     padding-left: 10px;
+    border-radius: var(--border-radius-medium);
 
   }
 

@@ -1,0 +1,56 @@
+.npc-name{
+  color: var(--color-accent-orange);
+  font-weight: bold;
+}
+
+.gem-name{
+  font-weight: bold;
+
+  &--red{
+    color: var(--color-accent-red);
+  }
+
+  &--blue{
+    color: var(--color-accent-blue);
+  }
+  &--green{
+    color: var(--color-succsess);
+  }
+}
+
+.gem-nest{
+  display: inline-flex;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light);
+  position: relative;
+
+  &:not(:first-child){
+    margin-left: 5px;
+
+    &:before{
+      content: '';
+      position: absolute;
+      left:-5px;
+      top: 50%;
+      translate: -50%;
+      width: 7px;
+      height: 1px;
+      border: 1px dotted var(--color-light);
+    }
+  }
+
+  &--red{
+
+    border: 2px solid var(--color-accent-red);
+  }
+  &--blue{
+
+    border: 2px solid var(--color-accent-blue);
+  }
+  &--green{
+
+    border: 2px solid var(--color-succsess);
+  }
+}
