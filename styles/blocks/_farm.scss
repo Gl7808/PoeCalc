@@ -1,0 +1,20 @@
+.calculator{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+ &__block{
+   display: flex;
+   justify-content: space-around;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: var(--color-new-dark-1);
+ }
+
+  &__item{
+    min-width: 200px;
+    min-height: 200px;
+    padding: 10px;
+    background-color: var(--color-new-dark-2);
+    border-radius: 8px;
+  }
+}

@@ -75,6 +75,8 @@ h3 {
   --color-accent-purple: #A485FF;
   --color-accent-glow: #FFE2E2;
   --color-dark-alternate: #170e2f;
+  --color-new-dark-1: #21222D;
+  --color-new-dark-2: #171821;
   --font-family-base: "Inter", sans-serif;
   --container-width: 1280px;
   --container-padding-x: 32px;
@@ -675,6 +677,26 @@ svg * {
 .roadmap__linked {
   padding-left: 10px;
   border-left: 1px dotted var(--color-light);
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+.calculator__block {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--color-new-dark-1);
+}
+.calculator__item {
+  min-width: 200px;
+  min-height: 200px;
+  padding: 10px;
+  background-color: var(--color-new-dark-2);
+  border-radius: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
