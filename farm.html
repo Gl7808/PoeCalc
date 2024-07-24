@@ -1,58 +1,275 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Farm Calculator</title>
-  <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Farm Calculator</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 <header class="header">
-  <div class="header__inner container">
-    <div class="header__logo">
-      <a href="/" class="header__logo-link">7808</a>
+    <div class="header__inner container">
+        <div class="header__logo">
+            <a href="./index.html" class="header__logo-link">7808</a>
+        </div>
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-item">
+                    <a href="./index.html" class="header__menu-link">Гайд</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="./farm.html" class="header__menu-link">Фарм</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="" class="header__menu-link">Прогресс</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="./farm.html" class="header__menu-link">faq</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <nav class="header__menu">
-      <ul class="header__menu-list">
-        <li class="header__menu-item">
-          <a href="./index.html" class="header__menu-link">Гайд</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="./farm.html" class="header__menu-link">Фарм</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="" class="header__menu-link">Прогресс</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="" class="header__menu-link">faq</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
 </header>
 
 <main class="main">
-  <section class="section container">
-    <div class="calculator">
-      <div class="calculator__block">
-
-        <div class="calculator__item">
-          Божественных сфер
+    <section class="section container">
+        <div class="section__header">
+            <h3 class="section__title violet-bg">
+                Локации
+            </h3>
+            <div class="section__description">
+                <p>
+                </p>
+            </div>
         </div>
-        <div class="calculator__item">
-          Профит
+        <div class="layout">
+            <ul class="layout__list">
+                <li class="layout__item layout__item--good">Храм ваал</li>
+                <li class="layout__item layout__item--good">Развалины в лесу</li>
+                <li class="layout__item layout__item--good">Риф разбитых кораблей</li>
+                <li class="layout__item layout__item--middle">Вулканический остров</li>
+                <li class="layout__item layout__item--middle">Окраины Утцааля</li>
+                <li class="layout__item layout__item--middle">Откосы</li>
+                <li class="layout__item layout__item--middle">Погост</li>
+                <li class="layout__item layout__item--middle">Захоронения на поле боя</li>
+                <li class="layout__item layout__item--middle">Могилы воинов каруи</li>
+                <li class="layout__item layout__item--bad">Гниющий храм</li>
+                <li class="layout__item layout__item--bad">Пустынные руины</li>
+                <li class="layout__item layout__item--bad">Заросли кустарника</li>
+                <li class="layout__item layout__item--bad">Трущобы Сарна</li>
+                <li class="layout__item layout__item--bad">Горный склон</li>
+            </ul>
         </div>
-        <div class="calculator__item">
-          Часов потрачено
+        <div class="mods">
+            <ul class="mods__list">
+                <li class="li"></li>
+            </ul>
         </div>
-      </div>
-      <div class="calculator__block">
-        asd
-      </div>
-    </div>
-  </section>
+    </section>
+    <section class="section container">
+        <div class="section__header">
+            <h3 class="section__title violet-bg">
+                Рунические таблички
+            </h3>
+            <div class="section__description">
+                <p>
+                </p>
+            </div>
+        </div>
+        <div class="runic">
+            <ul class="runic__list">
+                <li class="runic__item"></li>
+            </ul>
+        </div>
+        <div class="mods">
+            <ul class="mods__list">
+                <li class="mods__title">Хорошие</li>
+                <li class="mods__item mods__item--s">
+                    Рунические монстры удваиваются
+                    <p class="mods__description">Если есть, то перестраиваем всю цепочку, чтобы взять как можно
+                        раньше</p>
+                </li>
+                <li class="mods__item mods__item--s">
+                    Увеличение кол-ва выпадающих журналов
+                    <p class="mods__description">Только на картах</p>
+                </li>
+                <li class="mods__item mods__item--s">
+                    50% Увеличение кол-ва выпадающих артефактов
+                    <p class="mods__description">Стараемся набрать в как можно раньше в цепочке</p>
+                </li>
+                <li class="mods__item mods__item--s">
+                    40% Увеличение кол-ва предметов
+                    <p class="mods__description">Стараемся набрать в как можно раньше в цепочке</p>
+                </li>
+                <li class="mods__item mods__item--a">
+                    25% увеличение размера групп монстров
+                    <p class="mods__description">Если нечего брать, акцент на это</p>
+                </li>
+                <li class="mods__item mods__item--a">
+                    Из рунических монстров может выпасть доп.валюта
+                    <p class="mods__description">Может свистнуть 3-мя диванами</p>
+                </li>
+                <li class="mods__item mods__item--b">
+                    Из рунических монстров может выпасть скарабей
+                    <p class="mods__description">Ваще похуй, но если по дороге</p>
+                </li>
+                <li class="mods__item mods__item--b">Из рунических монстров может выпасть Ископаемое
+                    <p class="mods__description">Ваще похуй, но если по дороге</p>
+                </li>
+            </ul>
+            <ul class="mods__list">
+                <li class="mods__title">Плохие</li>
+                <li class="mods__item mods__item--f">
+                    Иммунитет к урону хаосом
+                    <p class="mods__description">Не брать никогда, взял - пизда рулю</p>
+                </li>
+                <li class="mods__item mods__item--b">
+                    Иммунитет к физическому урону
+                    <p class="mods__description">По возможности не брать, не прям страшно, но монстры будут жирнее на
+                        30-40%</p>
+                </li>
+                <li class="mods__item mods__item--b">
+                    Приспешники имеют 30% избежать весь урон от ударов
+                    <p class="mods__description">Можно брать не больше 2 штук, если взять 3 и больше, могут стать
+                        неуязвимыми</p>
+                </li>
+                <li class="mods__item mods__item--b">
+                    Иммунитет к проклятию
+                    <p class="mods__description">Монстры перестанут взрываться, зачистка станет каловой, но пройти
+                        можно</p>
+                </li>
+                <li class="mods__item mods__item--a">Монстры имеют 30% увеличения скорости атаки, скорости передвижения,
+                    сотворения чар, урон при малом кол-ве здоровья
+                    <p class="mods__description">Постараться избежать если на карте есть босс, а так похуй</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section container">
+        <div class="section__header">
+            <h3 class="section__title violet-bg">
+                Что забирать
+            </h3>
+            <div class="section__description">
+                <p>
+                </p>
+            </div>
+        </div>
+        <div class="drop">
+            <div class="equip__separator">
+                <h3>Забираем</h3>
+            </div>
+            <ul class="drop__list">
+                <li class="drop__item drop__item--s">
+                    <img src="./images/drop/MirrorShard.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Осколок зеркала</div>
+                </li>
+                <li class="drop__item drop__item--s">
+                    <img src="./images/drop/divine.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Божественная сфера</div>
+                </li>
+                <li class="drop__item drop__item--s">
+                    <img src="./images/drop/Enlighten.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Наставник</div>
+                </li>
+                <li class="drop__item drop__item--s">
+                    <img src="./images/drop/gem.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Камень 21-23, чекаем обязательно</div>
+                </li>
+                <li class="drop__item drop__item--s">
+                    <img src="./images/drop/gem2.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">85 уровень и 12 пассивок, чекаем цену</div>
+                </li>
+                <li class="drop__item">
+                    <img src="./images/drop/exalt.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Сфера возвышения</div>
+                </li>
+                <li class="drop__item">
+                    <img src="./images/drop/chaos.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Сфера хаоса</div>
+                </li>
+                <li class="drop__item">
+                    <img src="./images/drop/AnnullOrb.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Сфера отмены</div>
+                </li>
+                <li class="drop__item drop__item--a">
+                    <img src="./images/drop/PrismaticCatalyst.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Радужный катализатор</div>
+                </li>
+                <li class="drop__item drop__item--a">
+                    <img src="./images/drop/FertileCatalyst.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Насыщенный катализатор</div>
+                </li>
+                <li class="drop__item">
+                    <img src="./images/drop/AncientOrb.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Древняя сфера</div>
+                </li>
+                <li class="drop__item drop__item--a">
+                    <img src="./images/drop/Deck.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Колода карт</div>
+                </li>
+                <li class="drop__item">
+                    <img src="./images/drop/CurrencyGemQuality.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Призма камнереза</div>
+                </li>
+                <li class="drop__item">
+                    <img src="./images/drop/CurrencyVaal.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Сфера ваал</div>
+                </li>
+                <li class="drop__item">
+                    <img src="./images/drop/CurrencyPassiveSkillRefund.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Сфера раскаяния</div>
+                </li>
+                <li class="drop__item">
+                    <img src="./images/drop/blessed.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Благодатная сфера</div>
+                </li>
+                <li class="drop__item">
+                    <img src="./images/drop/CurrencyConvertToNormal.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Сфера отмены</div>
+                </li>
+                <li class="drop__item">
+                    <img src="./images/drop/regal.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Сфера царей</div>
+                </li>
+                <li class="drop__item">
+                    <img src="./images/drop/fussing.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Сфера соединения</div>
+                </li>
+                <li class="drop__item">
+                    <img src="./images/drop/fossil.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Ископаемые (все виды, но если дорого не берем)</div>
+                </li>
+                <li class="drop__item">
+                    <img src="./images/drop/scarab.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Скарабеи (все виды, но если дорого, чекаем прогой)</div>
+                </li>
+                <li class="drop__item">
+                    <img src="./images/drop/alch.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Сфера алхимии (тянем только первое время)</div>
+                </li>
+                <li class="drop__item">
+                    <img src="./images/drop/chromatic.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Цветная сфера (тянем только первое время)</div>
+                </li>
+                <li class="drop__item">
+                    <img src="./images/drop/chance.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Сфера удачи (тянем только первое время)</div>
+                </li>
+                <li class="drop__item">
+                    <img src="./images/drop/flask.png" height="47" width="47" alt="" class="drop__image">
+                    <div class="drop__name">Стекло</div>
+                </li>
+            </ul>
+        </div>
+        <div class="mods">
+            <ul class="mods__list">
+                <li class="li"></li>
+            </ul>
+        </div>
+    </section>
 </main>
 
 </body>
