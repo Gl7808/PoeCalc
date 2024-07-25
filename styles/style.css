@@ -803,4 +803,28 @@ svg * {
   font-size: 14px;
 }
 
+.act {
+  font-weight: 600;
+  color: #303030;
+}
+.act__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.act__item {
+  width: 100%;
+  min-height: 300px;
+  box-shadow: 0 0 15px 0 var(--color-dark-alternate);
+  border-radius: var(--border-radius-small);
+  display: grid;
+  grid-template-columns: auto 4fr;
+}
+.act__image {
+  width: 100%;
+}
+.act__description {
+  padding: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */

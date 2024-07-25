@@ -1,0 +1,26 @@
+
+.act{
+  font-weight: 600;
+  color: #303030;
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item{
+    width: 100%;
+    min-height: 300px;
+    box-shadow: 0 0 15px 0 var(--color-dark-alternate);
+    border-radius: var(--border-radius-small);
+    display: grid;
+    grid-template-columns: auto 4fr;
+  }
+  &__image{
+    width: 100%;
+  }
+  &__description{
+    padding: 10px;
+  }
+}
