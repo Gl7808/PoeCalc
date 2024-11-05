@@ -10,3 +10,11 @@ let FarmCounter = [
     },
 ]
 
+let g = () => {
+    for (let i=0; i<10; i++){
+        FarmCounter.map(()=> {
+
+        })
+    }
+}
+
