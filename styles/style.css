@@ -40,7 +40,7 @@ a {
   color: inherit;
 }
 a:hover {
-  color: var(--color-accent-purple);
+  color: var(--color-accent-yellow);
 }
 
 h2, h3, h4 {
@@ -65,20 +65,43 @@ h3 {
   --color-light-gray: rgba(255, 255, 255, 0.6);
   --color-light-gray-2: rgba(255, 255, 255, 0.4);
   --color-dark: #05010D;
-  --color-dark-2: rgba(28, 28, 28, 0.5);
-  --color-dark-gray: #10081e;
-  --color-block: #120E19;
+  --color-dark-2: #060708;
+  --color-dark-gray: #131619;
+  --color-block: #0D0F10;
   --color-succsess: #59D499;
   --color-accent-blue: #56C2FF;
   --color-accent-red: #FF6363;
   --color-accent-orange: #ff8d63;
-  --color-accent-purple: #A485FF;
+  --color-accent-yellow: #ffc863;
+  --color-accent-purple: #a088cc;
   --color-accent-glow: #FFE2E2;
-  --color-dark-alternate: #170e2f;
+  --color-dark-alternate: #181818;
   --color-s: #59D499;
   --color-a: #d4ca59;
   --color-b: #d49059;
   --color-f: #d23b3b;
+  --color-light-100: #FFF;
+  --color-light-200: #d7d7d7;
+  --color-light-300: #ababab;
+  --color-light-400: #8f8f8f;
+  --color-dark-500: #363A3D;
+  --color-dark-600: #1A1D21;
+  --color-dark-700: #131619;
+  --color-dark-800: #0D0F10;
+  --color-dark-900: #060708;
+  --color-dayblue-500: #7989EC;
+  --color-dayblue-600: #4D62E5;
+  --color-dayblue-700: #3045C9;
+  --color-dayblue-800: #243497;
+  --color-dayblue-9800: #182364;
+  --color-heisenberg-500: #A1E4F9;
+  --color-heisenberg-600: #65BEDA;
+  --color-heisenberg-700: #4C8FA4;
+  --color-heisenberg-800: #335F6D;
+  --color-heisenberg-900: #193037;
+  --color-green: #4AC97E;
+  --color-yellow: #c9a54a;
+  --color-red: #ec6d6c;
   --color-new-dark-1: #21222D;
   --color-new-dark-2: #171821;
   --font-family-base: "Inter", sans-serif;
@@ -86,7 +109,7 @@ h3 {
   --container-padding-x: 32px;
   --section-padding-y: 256px;
   --border-radius: 12px;
-  --border-radius-medium: 8px;
+  --border-radius-medium: 6px;
   --border-radius-small: 6px;
   --border-radius-button: 8px;
   --button-height: 44px;
@@ -261,10 +284,12 @@ svg * {
 }
 .header__logo {
   font-size: 25px;
-  color: var(--color-accent-purple);
+  color: var(--color-light);
+  text-shadow: 0px 0px 2px var(--color-accent-glow), 0px 0px 5px var(--color-accent-glow), 0px 0px 9px var(--color-accent-glow), 0px 0px 15px var(--color-accent-purple);
 }
 .header__logo:hover a {
-  color: var(--color-succsess);
+  color: var(--color-light);
+  text-shadow: 0px 0px 2px var(--color-accent-yellow), 0px 0px 5px var(--color-accent-yellow), 0px 0px 9px var(--color-accent-yellow), 0px 0px 15px var(--color-accent-yellow);
 }
 .header__menu-list {
   display: flex;
@@ -586,8 +611,43 @@ svg * {
 .note {
   margin-top: 20px;
   padding: 20px;
+  font-size: 15px;
+  color: var(--color-light-200);
   background-color: var(--color-dark-gray);
   border-radius: var(--border-radius-medium);
+}
+.note__quote {
+  background-color: var(--color-dark);
+  padding: 15px;
+  color: var(--color-accent-orange);
+}
+.note p {
+  margin-top: 10px;
+  padding: 0;
+}
+.note__items-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+.note__items-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-dark);
+  padding: 10px;
+  border-radius: var(--border-radius-medium);
+  box-shadow: 0px 0px 2px 1px var(--color-light-400);
+}
+.note__items-title {
+  text-align: center;
+}
+.note__items-image {
+  scale: 0.7;
+}
+.note h4 {
+  color: var(--color-light-gray);
 }
 
 .npc-name {
@@ -825,6 +885,49 @@ svg * {
 }
 .act__description {
   padding: 10px;
+}
+
+.items__list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+.items__list-item {
+  height: auto;
+  display: grid;
+  grid-template-columns: 15% 5% 1fr 10%;
+  gap: 20px;
+  background-color: var(--color-dark-800);
+  box-shadow: 0px 0px 3px 1px var(--color-light-400);
+  border-radius: 6px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.items__list-name {
+  font-size: 18px;
+}
+.items__list-description {
+  font-size: 16px;
+  text-align: center;
+}
+.items__list-type {
+  color: var(--color-yellow);
+}
+.items__gems {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.items__gems-item {
+  background-color: var(--color-dark-700);
+  padding: 10px;
+  font-size: 14px;
+}
+.build {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

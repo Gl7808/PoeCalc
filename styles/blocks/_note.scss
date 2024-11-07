@@ -1,6 +1,51 @@
 .note{
   margin-top: 20px;
   padding: 20px;
+  font-size: 15px;
+  color: var(--color-light-200);
   background-color: var(--color-dark-gray);
   border-radius: var(--border-radius-medium);
+
+  &__quote{
+    background-color: var(--color-dark);
+    padding: 15px;
+    color: var(--color-accent-orange);
+  }
+
+  p {
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  &__items{
+
+
+
+    &-list{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+
+    &-item{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--color-dark);
+      padding: 10px;
+      border-radius: var(--border-radius-medium);
+      box-shadow: 0px 0px 2px 1px var(--color-light-400);
+    }
+    &-title{
+      text-align: center;
+    }
+    &-image{
+      scale: 0.7;
+    }
+  }
+
+  h4{
+    color: var(--color-light-gray);
+  }
 }
