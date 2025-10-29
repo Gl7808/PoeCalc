@@ -351,6 +351,30 @@
     <!-- Footer -->
     <div class="footer">
 
+        <div class="skill-tree-section">
+            <h2>Журналы экспедиции</h2>
+            <div class="skill-links">
+                <a href="https://ru.pathofexile.com/trade/search/Standard/9OL7z5RHK" class="skill-link"><i class="fas fa-external-link-alt"></i>Черная коса 60+</a>
+                <a href="https://ru.pathofexile.com/trade/search/Standard/veZ0POkJhE" class="skill-link"><i class="fas fa-external-link-alt"></i>Черная коса 70+</a>
+                <a href="https://ru.pathofexile.com/trade/search/Standard/rveWvVmSQ" class="skill-link"><i class="fas fa-external-link-alt"></i>Черная коса 82+</a>
+                <a href="https://ru.pathofexile.com/trade/search/Standard/Yp9bqMjRcY" class="skill-link"><i class="fas fa-external-link-alt"></i>Ворана</a>
+            </div>
+        </div>
+
+        <div class="skill-tree-section">
+            <h2>Блайт мапы</h2>
+            <div class="skill-links">
+                <a href="https://ru.pathofexile.com/trade/search/Standard/LgJL4kjin" class="skill-link"><i class="fas fa-external-link-alt"></i>1-5</a>
+                <a href="https://ru.pathofexile.com/trade/search/Standard/YpaBl27UY" class="skill-link"><i class="fas fa-external-link-alt"></i>6-12</a>
+                <a href="https://ru.pathofexile.com/trade/search/Standard/QL5ZpQpTw" class="skill-link"><i class="fas fa-external-link-alt"></i>13-16</a>
+                <a href="https://ru.pathofexile.com/trade/search/Standard/mkZWjLOwc6" class="skill-link"><i class="fas fa-external-link-alt"></i>Уберблайт</a>
+            </div>
+        </div>
+
+
+
+
+
     </div>
 </div>
 
@@ -541,6 +565,10 @@
             'Основная': {
                 description: 'Крафтим эссенцией + станок (урон от чар 90+%) ( Скорость каста 27%+) (Мана 100+) (Двойной урон/Экстра хаос урон)',
                 purchaseLink: 'https://ru.pathofexile.com/trade/search/Standard/LgMqQ2Un'
+            },
+            'На богатом': {
+                description: 'Если лень крафтить',
+                purchaseLink: 'https://ru.pathofexile.com/trade/search/Standard/3Z9439Pi5'
             }
         },
         'Шлем': {
@@ -551,6 +579,10 @@
             'С корраптом': {
                 description: '-',
                 purchaseLink: 'https://ru.pathofexile.com/trade/search/Standard/rlBqz4uQ'
+            },
+            'На богатом': {
+                description: 'Если есть на трейде и это не пиздец как дорого',
+                purchaseLink: 'https://ru.pathofexile.com/trade/search/Standard/nd3zwyvt0'
             }
         },
         'Доспех': {
@@ -570,6 +602,11 @@
                 description: 'Сущностью Крафтим 800+ энергощита + резы (Красный - максимум алл резы 1) (Синий - Увеличение урона от молнии 20%+)',
                 purchaseLink: 'https://ru.pathofexile.com/trade/search/Standard/lW2V83jhV'
             }
+            ,
+            'На богатом': {
+                description: 'Красный - макс резы 1%, Синий 20% урона от молнии (докидываем сами) если на броньке не лучше',
+                purchaseLink: 'https://ru.pathofexile.com/trade/search/Standard/Yp9bqz4vFY'
+            }
         },
         'Амулет': {
             'Начальная': {
@@ -583,6 +620,10 @@
             'Мейн рарка': {
                 description: 'Норм (мажем 2 бирюзовых + зеленое)',
                 purchaseLink: 'https://ru.pathofexile.com/trade/search/Standard/JBEagJJWFl'
+            },
+            'На богатом': {
+                description: 'Норм (мажем 2 бирюзовых + зеленое)',
+                purchaseLink: 'https://ru.pathofexile.com/trade/search/Standard/8rlk2jWnFV'
             }
         },
         'Кольцо №1': {
@@ -593,6 +634,10 @@
             'Основная': {
                 description: 'Подбираем с резами, если нет убираем рарити',
                 purchaseLink: 'https://ru.pathofexile.com/trade/search/Standard/V5lLnKM8Cp'
+            },
+            'На богатом': {
+                description: '-',
+                purchaseLink: 'https://ru.pathofexile.com/trade/search/Standard/9zd52OXmHK'
             }
         },
         'Кольцо №2': {
@@ -603,12 +648,20 @@
             'Основная': {
                 description: 'Подбираем с резами, если нет убираем рарити',
                 purchaseLink: 'https://ru.pathofexile.com/trade/search/Standard/V5lLnKM8Cp'
+            },
+            'На богатом': {
+                description: '-',
+                purchaseLink: 'https://ru.pathofexile.com/trade/search/Standard/9zd52OXmHK'
             }
         },
         'Перчатки': {
             'Начальная': {
                 description: '-',
                 purchaseLink: 'https://ru.pathofexile.com/trade/search/Standard/PzZYR2ZFL'
+            },
+            'На богатом': {
+                description: '',
+                purchaseLink: 'https://ru.pathofexile.com/trade/search/Standard/EBon68jVu5'
             }
         },
         'Сапоги': {
@@ -709,7 +762,7 @@
                             if (processedStone.includes(link.text)) {
                                 processedStone = processedStone.replace(
                                     link.text,
-                                    `<span class="skill-link-text">${link.text} <i class="fas fa-external-link-alt"></i></span>`
+                                    `<a href="${link.url}" class="skill-link-text">${link.text} <i class="fas fa-external-link-alt"></i></a>`
                                 );
                             }
                         });
